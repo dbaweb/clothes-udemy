@@ -7,12 +7,14 @@ import { JacketsPage } from "./components/pages/jacketspage/jackets-page.compone
 import { SneakersPage } from "./components/pages/sneakerspage/sneakers-page.component";
 import { WomenPage } from "./components/pages/womenpage/women-page.component";
 import { MenPage } from "./components/pages/menpage/men-page.component";
+import ShopPage from "./components/pages/shop/shop.component";
 
 function App() {
   return (
     <div>
       <Switch>
         <Route exact path="/" component={HomePage}></Route>
+        <Route exact path="/shop" component={ShopPage}></Route>
         <Route exact path="/hats" component={HatsPage}></Route>
         <Route exact path="/jackets" component={JacketsPage}></Route>
         <Route exact path="/sneakers" component={SneakersPage}></Route>
